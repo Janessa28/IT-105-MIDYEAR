@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for proper character encoding and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title that appears in browser tab -->
+    <title>Wristly - Your Online Store</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER SECTION - Fixed navigation bar at the top -->
+    <header class="header">
+        <div class="container">
+            <!-- Company logo/brand name -->
+            <div class="logo">
+                <h1>Wristly</h1>
+            </div>
+            
+            <!-- Main navigation menu with anchor links -->
+            <nav class="nav">
+                <ul>
+                    <!-- Anchor links (#) scroll to sections on the same page -->
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Shopping cart icon with item counter -->
+            <div class="cart-icon">
+                <span>🛒</span>
+                <!-- Cart count badge that would be updated with JavaScript -->
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION - Main banner/landing area -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Main headline -->
+                <h2>Welcome to Wristly</h2>
+                <!-- Subtitle/description -->
+                <p>Discover amazing products at great prices</p>
+                <!-- Call-to-action button that links to products section -->
+                <a href="#products" class="cta-button">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS SECTION - Display of product cards -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            
+            <!-- Product grid using CSS Grid for responsive layout -->
+            <div class="product-grid">
+                
+                <!-- PRODUCT CARD 1 - Wireless Headphones -->
+                <div class="product-card">
+                    <!-- Product image container -->
+                    <div class="product-image">
+                        <!-- Placeholder image from placeholder.com service -->
+                        <img src="https://www.fields.ie/dw/image/v2/BFNQ_PRD/on/demandware.static/-/Sites-ang_master-catalog/default/dwc8049ef8/hi-res/srpb41j1-seiko-presage-cocktail-collection-blue-dial-steel-mens-watch-18-01-2-5291-img1.jpg?sw=1000&sh=1000&sm=fit" alt="Product 1">
+                    </div>
+                    <!-- Product information and details -->
+                    <div class="product-info">
+                        <h4>Seiko Presage Basic Line Collection 40.5mm Blue Dial Steel Mens Watch</h4>
+                        <!-- Price styling with special color -->
+                        <p class="price">$429.00</p>
+                        <p class="toggle-description">Product Description</p>
+                        <p class="description" style="display: none;">As part of Seiko's Basic LineCollection, this steel automatic watch is perfectly suited to the sophisticated gentleman. It utilises a round dial that houses a striped blue face along with three watch hands, hour and minute markers and a useful date feature positioned at the 3 o'clock position. Featuring a stunning silver effect stainless steel bezel, bracelet, casing and crown; this makes for a classic and sleek selection of colours and materials. A stunning addition to Seiko's arsenal of admirable timepieces..</p>
+                        <!-- Add to cart button (would need JavaScript for functionality) -->
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+  
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://www.fields.ie/dw/image/v2/BFNQ_PRD/on/demandware.static/-/Sites-ang_master-catalog/default/dw4ca8a45c/hi-res/ssk005k1-seiko-5-sports-mikan-orange-gmt-skx-re-interpretation-425mm-orange-dial-watch-18-01-2-0358-img1.jpg?sw=1000&sh=1000&sm=fit" alt="Product 2">
+                    </div>
+                    <div class="product-info">
+                        <h4>Seiko 5 Sports 'Mikan orange' GMT SKX Re-interpretation 42.5mm Orange Dial Watch</h4>
+                        <p class="price">$ 395.00</p>
+                        <p class="toggle-description">Product Description</p>
+                        <p class="description" style="display: none;">The Seiko 5 Sports watches, first introduced in the 1990s, were a modernized rendition of the classic models from the 1960s. These updated timepieces retained the reliability and durability of their predecessors while incorporating improved features for practicality.The 90s collection boasted enhanced water resistance, strengthened crystals, and luminous hands and hour markers for better visibility. These qualities continue to define the modernized Seiko 5 Sports designs available today.The bi-color 24-hour bezel, coated in durable Hardlex material, ensures longevity and functionality. The addition of a GMT hand enhances practicality and legibility, particularly for international timekeeping. The clear 24-hour bezel allows for quick and easy multiple time zone calculations at a glance.Staying true to the heritage of the SKX line, the bracelet features the iconic "beads of rice" design, characterized by a five-piece link formation forming X-shaped patterns.To enhance visibility in low-light conditions, the hands and indices are coated with LumiBrite, a fluorescent luminous paint that absorbs light energy and emits a bright and long-lasting glow. LumiBrite's effectiveness is especially notable in partial darkness, gradually fading over time.</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://www.fields.ie/dw/image/v2/BFNQ_PRD/on/demandware.static/-/Sites-ang_master-catalog/default/dwf3e2247e/hi-res/srpd63k1-seiko-5-sports-425mm-green-dial-bezel-bracelet-watch-18-01-2-0291-img1.jpg?sw=1000&sh=1000&sm=fit" alt="Product 3">
+                    </div>
+                    <div class="product-info">
+                        <h4>Seiko 5 Sports 42.5mm Green Dial Bezel Bracelet Watch</h4>
+                        <p class="price">$340.00</p>
+                        <p class="toggle-description">Product Description</p>
+                        <p class="description" style="display: none;">
+                        For over 50 years, Seiko 5 Sports has delivered consistently high levels of reliability, durability, performance and value, endearing them to lovers of mechanical watches worldwide.Today, with a new design, this much-loved timepiece is re-born. 5 represents the original five key attributes of every Seiko 5 watch: Automatic movement, Day-date display at the three o’clock position, Water Resistance, Recessed crown at the four o’clock position and Durable case and bracelet – features still present today.Welcome to today’s Seiko 5 Sports: traditional values with fresh new looks..</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://www.fields.ie/dw/image/v2/BFNQ_PRD/on/demandware.static/-/Sites-ang_master-catalog/default/dwa45e62ad/hi-res/ssc911p1-seiko-prospex-speedtimer-414mm-solar-chronograph-black--grey-bezel-watch-18-01-2-0381-img1.jpg?sw=1000&sh=1000&sm=fit" alt="Product 4">
+                    </div>
+                    <div class="product-info">
+                        <h4>Seiko Prospex Speedtimer 41.4mm Solar Chronograph Black & Grey Bezel Watch</h4>
+                        <p class="price">$689.00</p>
+                        <p class="toggle-description">Product Description</p>
+                        <p class="description" style="display: none;">
+                         In the 1960s, Seiko announced itself on the international sports timing stage with a whole new generation of high-precision equipment. Seiko timekeeping is endorsed by international sports federations at many of the world's leading sports events, starting with the 1964 Olympics and continuing into the IAAF partnership today.Adding to the popular Speedtimer watch collection, this particular design features an increased 41.3mm case size the original was 39mm, whilst this piece is 41.4mm, featuring a tapered bracelet, aluminum bezel and tachymeter for increased practicality and visibility. Conveniently, this watch charges from both natural and electric light.Prospex timepieces are practical, reliable and durable within extreme or everyday environments, for sports lovers and adventure seekers alike.</p>
+                        <button class="add-to-cart">Add to Cart</buton>
+                    </div>
+                </div>
+
+               
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://www.thejewelleryeditor.com/media/images_thumbnails/filer_public_thumbnails/filer_public/79/93/7993c0de-7ca9-487d-99aa-d06d3b5a725f/rolex_oyster_perpetual_31mm.jpg__1536x0_q75_crop-scale_subsampling-2_upscale-false.jpg" alt="Product 5">
+                    </div>
+                    <div class="product-info">
+                        <h4> Rolex Oyster Perpetual 31mm 904L watch in steel</h4>
+                        <p class="price">$3,300</p>
+                        <p class="toggle-description">Product Description</p>
+                        <p class="description" style="display: none;">
+                        A Rolex icon, the Oyster Perpetual is a direct descendant of the 1926 waterproof Oyster watch and the 1931 Perpetual mechanical self-winding movement. Like all watches at Rolex, this 31mm steel model is certified as a Superlative Chronometer and boasts a precision rate of -2/+2 seconds per day. The Oyster case guarantees water-resistance to 100 metres and is crafted in corrosion-resistant 904L steel, with a screw-down caseback and winding crown to protect the mechanical self-winding movement. The lovely blue azzuro dial is offset with Roman numerals with numbers  III, IV and IX  in applied 18-ct. white gold while the rest are in a contrasting light blue colour. Designed to be worn day in, day out, the scratch-resistant sapphire crystal protecting the dial and the superlative quality 904L steel with its satin and polished finishes will keep the watch looking brand new for years to come. </p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+              
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://media.rolex.com/image/upload/q_auto:eco/f_auto/t_v7-majesty/c_limit,w_1200/v1/catalogue/2025/upright-c/m279138rbr-0006" alt="Product 6">
+                    </div>
+                    <div class="product-info">
+                        <h4>Rolex-Lady-Datejust</h4>
+                        <p class="price">$46,000</p>
+                        <p class="toggle-description"> Product Description</p>
+                        <p class="description" style="display: none;">
+                            A watchmaking technique
+                            This dial features diamonds in 18 ct gold settings and a Roman IX in 18 ct gold, set with 8 diamonds. The sunray finish creates delicate light reflections on many dials in the Oyster Perpetual collection. It is obtained using masterful brushing techniques that create grooves running outwards from the centre of the dial.
+                            Light is diffused consistently along each engraving, creating a characteristic subtle glow that moves depending on the position of the wrist. Once the sunray finish has been completed, the dial colour is applied using Physical Vapour Deposition or electroplating. A light coat of varnish gives the dial its final look.</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION - Company information and features -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Wristly</h2>
+            
+            <!-- Two-column layout: company description and features -->
+            <div class="about-content">
+                <!-- Left column: Company description -->
+                <div class="about-text">
+                    <p>Wristly is a modern watch retailer built for the digital age.
+                       We specialize in offering a carefully curated selection of authentic timepieces, combining timeless craftsmanship with the ease and accessibility of online shopping. From everyday essentials to premium statement pieces, each watch in our collection is chosen for its quality, reliability, and design..</p>
+                    <p>Our mission is to provide excellent customer service and deliver products that exceed your expectations.</p>
+                </div>
+                
+                <!-- Right column: Key features/benefits -->
+                <div class="features">
+                    <!-- Feature 1: Fast Shipping -->
+                    <div class="feature">
+                        <h3>🚚 Fast Shipping</h3>
+                        <p>Free shipping on orders over $50</p>
+                    </div>
+                    
+                    <!-- Feature 2: Secure Payment -->
+                    <div class="feature">
+                        <h3>🛡️ Secure Payment</h3>
+                        <p>100% secure payment processing</p>
+                    </div>
+                    
+                    <!-- Feature 3: Easy Returns -->
+                    <div class="feature">
+                        <h3>↩️ Easy Returns</h3>
+                        <p>30-day return policy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION - Contact form and company details -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            
+            <!-- Two-column layout: contact info and contact form -->
+            <div class="contact-content">
+                <!-- Left column: Company contact information -->
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>📧 Email: info@Popcrate.com</p>
+                    <p>📞 Phone: (555) 123-4567</p>
+                    <p>📍 Address: 123 Commerce St, City, State 12345</p>
+                </div>
+                
+                <!-- Right column: Contact form -->
+                <div class="contact-form">
+                    <!-- Form would need backend processing to actually send emails -->
+                    <form>
+                        <!-- Name input field -->
+                        <input type="text" placeholder="Your Name" required>
+                        <!-- Email input field -->
+                        <input type="email" placeholder="Your Email" required>
+                        <!-- Message textarea -->
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <!-- Submit button -->
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION - Links, social media, and copyright -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Footer content in grid layout -->
+            <div class="footer-content">
+                
+                <!-- Footer section 1: Company info -->
+                <div class="footer-section">
+                    <h3>Popcrate</h3>
+                    <p>Your trusted online shopping destination</p>
+                </div>
+                
+                <!-- Footer section 2: Quick navigation links -->
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Footer section 3: Customer service links -->
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Footer section 4: Social media links -->
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">📘 Facebook</a>
+                        <a href="#">📷 Instagram</a>
+                        <a href="#">🐦 Twitter</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer bottom: Copyright notice -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Wristly. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggles = document.querySelectorAll(".toggle-description");
+  
+      toggles.forEach(toggle => {
+        toggle.style.cursor = "pointer";
+        toggle.style.color = "#3498db";
+        toggle.style.fontWeight = "bold";
+  
+        toggle.addEventListener("click", () => {
+          const desc = toggle.nextElementSibling;
+          if (desc.style.display === "none" || desc.style.display === "") {
+            desc.style.display = "block";
+          } else {
+            desc.style.display = "none";
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
